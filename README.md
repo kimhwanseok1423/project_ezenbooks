@@ -89,22 +89,23 @@
 </details>
 
 <details>
-  <summary>고객들이 원하는 알고리즘 추천  </summary>
+  <summary>고객들이 원하는 알고리즘 추천  </summary> <br>
 
 - **구현 기능** <br>
-    - 로그인한 회원과 비슷한 취향의 고객이 선택한 책들을 추천해주는 기능
+    - 로그인한 회원과 비슷한 취향의 고객이 선택한 책들을 추천해주는 기능 <br>
+
 - **구현 방법**<br>
     - 유사도 높은 순으로 정렬
       - 사용자가 평가 혹은 구매하지 않은 아이템을 유사도에 따라 정렬한다.
     - 인기도 높은 순으로 정렬
-      - 각 아이템 간 등급(평점)의 평균을 계산하고 이를 통해 인기도를 결정한다. 그 후 인기도 순으로 정렬하고 상위 N개를 출력한다.
+      - 각 아이템 간 등급(평점)의 평균을 계산하고 이를 통해 인기도를 결정한다. 그 후 인기도 순으로 정렬하고 상위 N개를 출력한다.<br>
         
-      <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처15.PNG">
-        <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처16.PNG">
-          <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처17.PNG">
-            <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처18.PNG">
-  <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처19.PNG">
-   <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처20.PNG">
+      <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처15.PNG"><br><br>
+        <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처16.PNG"><br><br>
+          <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처17.PNG"><br><br>
+            <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처18.PNG"><br><br>
+  <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처19.PNG"><br><br>
+   <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처20.PNG"><br>
 
 </details>
 
