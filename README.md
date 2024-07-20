@@ -14,14 +14,13 @@
 
 ## 개요
 
+다양한 책 쇼핑몰을 벤치마킹하여 사용자 접근성을 높였습니다.
 
-1. 현재 많은 책 쇼핑몰들을 밴치마킹하여 접근성이 쉽게 표현함.
-2. 광고와 베스트셀러 추천에 의존하던 기존 구매패턴에서 벗어나 딥러닝 기술을 이용해 고객이 자주 구매한 상품을 </br> 바탕으로 고객의 취향을 
-   분석해 새로운 상품을 개발
-3. 검색기능, 베스트셀러 , 카테고리 등을 표현하여 좀더 쉽게 접근가능하도록 개발.
+기존의 광고와 베스트셀러 추천에 의존하던 구매 패턴에서 벗어나, 딥러닝 기술을 이용해 <br>
 
+고객의 구매 데이터를 분석하여 개인의 취향에 맞는 상품을 추천합니다.
 
-
+검색 기능, 베스트셀러, 카테고리 등을 직관적으로 표현하여 사용자들이 더욱 쉽게 원하는 책을 찾을 수 있도록 개발하였습니다.
 ## 사용기술
 
 <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처11.PNG">
@@ -41,50 +40,46 @@
 ## 구현기능
 
 <details>
-  <summary>회원가입 및 로그인 기능</summary>
+  <summary>회원가입 및 회원기능 </summary>
   
   - **구현 기능** <br>
   사용자 회원가입 및 로그인 기능을 구현했습니다.
 
 - **구현 방법** <br>
   
-  - 계정 중복 확인 -> `UserRepository`조회하여 중복 시 예외 던짐
-  - 로그인 완료시 기능 , 로그인 아닐시 기능 분리 
-  - 이메일 중복확인 
+  - 계정 중복 확인
+    -`UserRepository`조회하여 중복 시 예외 던짐
+  - 로그인 기능
+    - 로그인 시 사용자가 입력한 정보가 데이터베이스와 일치하는지 확인합니다. 로그인 성공 시 사용자에게 로그인 상태를 유지하는 기능을 제 
+      공하며, 로그인 실패 시 적절한 오류 메시지를 표시합니다.
+  - 이메일 중복확인
+     -회원가입 시 입력한 이메일이 이미 존재하는지 확인합니다. 중복된 이메일이 있을 경우 사용자에게 알림을 제공하고, 회원가입을 차단합니다.
+  - 마이페이지
+    - 로그인 후 사용자가 자신의 정보를 확인하고 수정할 수 있는 마이페이지를 구현하였습니다. 
       
- <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/로그인1.PNG">
+<img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처21.PNG"><br>
 
- <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/로그인2.PNG">
+<img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처22.PNG"><br>
 
-  <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/로그인3.PNG">
-
-   <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/로그인4.PNG">
 
 </details>
 
 <details>
-  <summary>관리자 페이지(회원관리기능) </summary>
+  <summary>관리자 페이지 </summary>
 
 
   - **구현 기능** <br>
-    - 마이페이지 기능을 추가
     - 관리자 페이지
-    - 댓글 삭제 , 수정
+    - 회원삭제 ,리뷰관리
+    - 기간별 매출 현황 
 
   - **구현 방법** <br>
 
-    
- <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처9.PNG">
+ <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처23.PNG"><br>
 
- <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처9.5.PNG">
+ <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처24.PNG"><br>
 
-  <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처9.6.PNG">
-
-   <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처10.PNG">
-
-<img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처11.PNG">
-
-<img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처12.PNG">
+ <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처25.PNG"><br>
    
 </details>
 
@@ -110,38 +105,36 @@
 </details>
 
 <details>
-  <summary>메인페이지 </summary>
+  <summary>메인 페이지 기능 구현  </summary>
 
 - **구현 기능** <br>
-    - 크롤링을 활용한 데이터분석후 분류한 카테고리에 키워드로 분류함
+    - 
 
 - **구현 방법**<br>
-   
-    
-   - 크롤링을 활용한 인터넷에 있는 카페 분위기 댓글 키워드를 추출 </br>
-  
 
-        <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처19.PNG">
+  -메인 페이지 구성
+   -사용자들이 쉽게 원하는 책을 찾을 수 있도록 select 요소를 활용하여 다양한 카테고리와 옵션을 제공하였습니다. 
+    데이터베이스에서 책 데이터를 가져와 select 요소에 동적으로 뿌려주었습니다.
+   -카테고리 페이지
+    -데이터베이스 테이블에 카테고리 컬럼을 추가하여 책들이 해당 카테고리에 맞게 분류되도록 설정하였습니다.
+     사용자가 메인 페이지에서 선택한 카테고리에 따라 해당 카테고리에 속하는 책들을 조회하고 표시하였습니다.
+   -상세 페이지
+    -사용자가 특정 책을 선택하면, 선택된 책의 id 값을 기반으로 데이터베이스에서 해당 책의 상세 정보를 가져와 상세 페이지에 표시하였습니다.
+     상세 페이지에서는 책의 제목, 저자, 가격, 설명 등의 세부 정보를 제공하였습니다.
+   -장바구니 기능:
+    -사용자가 원하는 책을 장바구니에 추가할 수 있도록 구현하였습니다.
+     장바구니에 담긴 책들은 사용자 세션에 저장되어 유지되며, 필요 시 데이터베이스에도 저장됩니다.
+   -결제 기능
+    -장바구니에 담긴 책들을 확인하고 결제할 수 있는 기능을 구현하였습니다.
+     결제 정보 입력, 결제 처리, 그리고 주문 확인 단계를 거쳐 사용자가 책을 구매할 수 있도록 하였습니다.
 
-
-    - AJAX를 활용한 키워드를 클릭시 해당함수를 실행시켜 UI에 표현하기</br>
-      
-
-    <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처20.PNG">
-
-- 상세페이지로 이동시 주소,전화번호,별점,영업시간등 정보 표현</br>
-  
-  
-     <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처21.PNG">
-
-
- - 로그인 후에 카페 대한 리뷰 댓글 작성</br>
-   
-   
-   <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처22.PNG">
- - 데이터 랭킹 홍페이지를 크롤링을 통해  연령별 커피 수요 장소 데이터를 이용하여 AJAX로 뿌려줌
-
-     <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처23.PNG">
+<img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처26.PNG">
+<img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처27.PNG">
+<img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처28.PNG">
+<img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처29.PNG">
+<img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처30.PNG">
+<img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처31.PNG">
+<img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처32.PNG">
 
 </details>
 
