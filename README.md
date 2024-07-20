@@ -24,7 +24,7 @@
 
 ## 사용기술
 
-<img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/123123123111.PNG">
+<img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처11.PNG">
 
 
 
@@ -151,7 +151,9 @@
 </details>
 
  ## ERD
- <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/erd1.PNG">
+<img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처12.PNG">
 
   ## 영상
-   ## [유튜브 링크](https://www.youtube.com/watch?v=OGwiO6MsiHY)
+   ## [유튜브 링크](https://www.youtube.com/watch?v=ntikFWHEWn4)
+
+   
