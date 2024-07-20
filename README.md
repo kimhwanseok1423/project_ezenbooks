@@ -1,4 +1,4 @@
-
+![image](https://github.com/user-attachments/assets/32c8bdab-78d3-4879-9ff7-372da99e6c8b)
 <img src="https://github.com/user-attachments/assets/1c52f779-8135-4184-aa41-ff7faaed6b79" alt="image" width="800"/>
 
 ---
@@ -50,8 +50,7 @@
   
   - 계정 중복 확인 -> `UserRepository`조회하여 중복 시 예외 던짐
   - 로그인 완료시 기능 , 로그인 아닐시 기능 분리 
-  - 사이드바를 통해 회원정보수정 , 자유게시판 , 추천리스트 활성화
-  - 메인 페이지 우측에 회원 이름 표시
+  - 이메일 중복확인 
       
  <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/로그인1.PNG">
 
@@ -64,18 +63,17 @@
 </details>
 
 <details>
-  <summary>회원관리기능 (마이페이지  / 자유게시판 / 댓글 )</summary>
+  <summary>관리자 페이지(회원관리기능) </summary>
 
 
   - **구현 기능** <br>
-    회원 정보 관리기능을 구현했습니다.
-   
-  - **구현 방법** <br>
-
     - 마이페이지 기능을 추가
-    - 게시판 기능 
+    - 관리자 페이지
     - 댓글 삭제 , 수정
 
+  - **구현 방법** <br>
+
+    
  <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처9.PNG">
 
  <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처9.5.PNG">
@@ -91,26 +89,22 @@
 </details>
 
 <details>
-  <summary>다음지도 API 기능  </summary>
+  <summary>고객들이 원하는 알고리즘 추천  </summary>
 
 - **구현 기능** <br>
-    - API를 활용한 카페 위치 표현 
+    - 로그인한 회원과 비슷한 취향의 고객이 선택한 책들을 추천해주는 기능
 - **구현 방법**<br>
-    - 카카오에서 키값을 받아와 api를 활성화
-    - 현위치 표현
-    - 카페이름 검색시 좌표 표현
-    - 구,동 입력시 데이터에 맞는 카페 호출
-
-   <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처14.PNG"><br>
-   
-
-   
-
-     <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처13.PNG">
-   
-
-     <img src="https://github.com/kimhwanseok1423/cafegaza/blob/master/src/main/webapp/resources/img/캡처15.PNG">
-   
+    - 유사도 높은 순으로 정렬
+      - 사용자가 평가 혹은 구매하지 않은 아이템을 유사도에 따라 정렬한다.
+    - 인기도 높은 순으로 정렬
+      - 각 아이템 간 등급(평점)의 평균을 계산하고 이를 통해 인기도를 결정한다. 그 후 인기도 순으로 정렬하고 상위 N개를 출력한다.
+        
+      <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처15.PNG">
+        <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처16.PNG">
+          <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처17.PNG">
+            <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처18.PNG">
+  <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처19.PNG">
+   <img src="https://github.com/kimhwanseok1423/project_ezenbooks/blob/master/frontend/public/img/캡처20.PNG">
 
 </details>
 
